@@ -1,0 +1,32 @@
+{
+  "name": "rspack-demo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rspack build",
+    "check": "biome check --write",
+    "dev": "rm -rf dist && cross-env NODE_ENV=development rspack serve",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
+    "@rspack/cli": "^1.1.4",
+    "@rspack/core": "^1.1.4",
+    "@rspack/plugin-react-refresh": "1.0.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "cross-env": "^7.0.3",
+    "i": "^0.3.7",
+    "npm": "^10.9.1",
+    "react-refresh": "^0.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "worker-loader": "^3.0.8",
+    "worker-rspack-loader": "^3.1.2"
+  }
+}
